@@ -1,3 +1,17 @@
+/* EJERCICIO 3
+debemos cargar 10 productos que acaban de llegar a la empresa 
+"Galletitas Felices", para cada producto se debe registrar:
+marca del producto
+Tipo de galletita : "con sal", "sin sal", "dulces".
+cantidad de cajas: mas de 0
+cantidad de kilos por caja:mas de 0
+nombre proveedor
+origen: "nacional", "mercosur", "resto del mundo"
+Se pide informar por document.write:
+
+a) el ingreso nacional con la menor cantidad de cajas.
+b) el proveedor de las galletitas dulces que menos kilos tiene por caja.
+c) el origen que tiene mayor cantidad de cajas en total */
 function mostrar() {
   let tipoJuguete;
   let origen;
@@ -17,7 +31,6 @@ function mostrar() {
   /* d */
   let flagRompecabezas = 1;
   let precioBarato;
-  /* e */ precioBarato = precio;
   let ivaTotal;
 
   let respuesta;
@@ -71,7 +84,7 @@ function mostrar() {
     importeTotal = importeTotal + precio;
 
     respuesta = prompt("desea ingresar nuevamente");
-  } while (respuesta == si);
+  } while (respuesta == "si");
 
   if (
     contadorMuneca > contadorPelota &&

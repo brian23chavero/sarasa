@@ -1,3 +1,17 @@
+/* EJERCICIO 2
+El dueño de una tienda dedicada a la compra/venta de cartas de Yu-Gi-Oh! desea ingresar en el
+sistema las ventas realizadas en el dia de la fecha y conocer ciertos datos en base a las cartas
+que se vendieron.
+Se ingresara hasta que el usuario decida:
+Nombre de la carta.
+Tipo de carta: Validar "monstruo", "magica", "trampa".
+Rareza: Validar "rara", "super rara", "ultra rara".
+Precio: Validar que no sea 0 o negativo.
+Se pide informar por document.write:
+A) El nombre y rareza de la carta con mayor precio.
+B) Cuantas cartas de tipo "magica" y de rareza "rara o super rara" fueron vendidas.
+C) el porcentaje de rara, super rara y ultra rara hay sobre el total
+[ej: 30% rara ,30% super rara, 40% ultra rara ( debe sumar 100)] */
 function mostrar() {
   let nombre;
   let carrera;
@@ -59,9 +73,9 @@ function mostrar() {
         prompt("Error,reingrese notaPromedio entre 1 y 10")
       );
     }
-    edad = prompt("ingrese edad");
+    edad = parseInt(prompt("ingrese edad"));
     while (isNaN(edad) || edad > 0) {
-      edad = prompt("Error,reingrese edad");
+      edad = parseInt(prompt("Error,reingrese edad"));
     }
     switch (carrera) {
       case "Fisica":

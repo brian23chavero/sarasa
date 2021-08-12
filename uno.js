@@ -1,3 +1,21 @@
+// EJERCICIO 1
+/*  Para una veterinaria se necesita un programa que permita ingresar datos de perros 
+ con su precio de vacunación a pagar hasta que el cliente quiera. 
+ Por cada perro, se ingresa:
+  raza: (validar "sharpei", "galgo", "pastor").
+  nombre,
+  edad (entre 1 y 25),
+  peso (mas de 0),
+  precio de consulta (desde 500 hasta 1500)
+ Se pide informar por alert:
+ a)El importe a pagar mas caro de los "pastor".
+ b)El importe total a pagar con descuento (solo si corresponde)
+ 	Si se vacunan más de 2 perros, se obtiene un 20% de descuento sobre el total a pagar.
+ 	Si se vacunan más de 4 perros, se obtiene un 30% de descuento sobre el total a pagar.
+ 	Si se vacunan más de 6 perros, se obtiene un 40% de descuento sobre el total a pagar.
+ c)La raza con más cantidad de perros mayores a 10 años
+ d)Nombre, raza y edad del perro más joven ingresado
+  */
 function mostrar() {
   let nombre;
   let tipo;
