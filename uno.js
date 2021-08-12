@@ -23,17 +23,21 @@ function mostrar() {
   let porcentajeAves;
 
   do {
-    nombre = prompt("ingrese nombre minimo 3 caracteres y maximo 10");
-    while (!(nombre.length >= 3 && nombre.length <= 10)) {
-      nombre = prompt("Error,reingrese nombre minimo 3 caracteres y maximo 10");
+    nombre = prompt("ingrese nombre minimo 3 caracteres y maximo 8");
+    while (!(nombre.length >= 3 && nombre.length <= 8)) {
+      nombre = prompt("Error,reingrese nombre minimo 3 caracteres y maximo 8");
     }
     edad = parseInt(prompt("ingrese edad mayor a 0"));
     while (isNaN(edad) || edad > 0) {
       edad = parseInt(prompt("Error,reingrese edad mayor a 0"));
     }
+    sangre = prompt("ingrese tipo de sangre fria o calida");
+    while (sangre != "fria" && sangre != "calida") {
+      sangre = prompt("Error,reingrese tipo de sangre fria o calida");
+    }
     tipo = prompt(" ingrese tipo:mamifero, ave, reptil ");
-    if (sangre == "fria" && tipo != "reptil") {
-      tipo = prompt("El tipo de sangre debe ser fria ");
+    if (tipo != "reptil" && sangre != "fria") {
+      tipo = prompt("Los reptiles son de sangre fria ");
     } else {
       while (!(tipo == "reptil" || tipo == "mamifero" || tipo == "ave")) {
         tipo = prompt("Error! ,reingrese tipo mamifero, ave, reptil");
